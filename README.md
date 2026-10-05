@@ -7,7 +7,7 @@ A production-grade authentication & authorization gateway built with **Node.js +
 Hybrid Authentication (Local **Bcrypt** + **GitHub OAuth 2.0**), **Access/Refresh Token Rotation** with httpOnly cookies,
 **Role-Based Access Control**, tenant isolation, and **OWASP** hardening.
 
-🔗 **Live demo:** https://YOUR-APP.onrender.com
+🔗 **Live demo:** https://secure-gateway-3g7o.onrender.com
 📬 **Postman collection:** [`postman/SecurityGateway.postman_collection.json`](postman/SecurityGateway.postman_collection.json)
 
 ---
