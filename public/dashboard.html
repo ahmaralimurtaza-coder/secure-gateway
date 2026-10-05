@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security Gateway — Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span class="dot"></span>Enterprise Security Gateway</div>
+      <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Session</h2>
+        <div class="who">
+          <img id="avatar" class="hidden" alt="">
+          <div>
+            <div id="userName">Loading…</div>
+            <div class="creds" id="userEmail"></div>
+            <span id="userRole" class="badge"></span>
+          </div>
+        </div>
+        <div class="token">Access token (in memory only, expires in 15 min):<br><span id="tokenView">—</span></div>
+        <button id="refreshBtn" class="full">Rotate refresh token → new access token</button>
+      </section>
+
+      <section class="card">
+        <h2>RBAC test</h2>
+        <div class="actions">
+          <button data-call="profile">GET /employee/profile <small>All roles</small></button>
+          <button data-call="payroll">POST /payroll/approve <small>Manager, SuperAdmin</small></button>
+          <button data-call="delete">DELETE /users/:id <small>SuperAdmin</small></button>
+          <button data-call="users">GET /users <small>Manager, SuperAdmin</small></button>
+        </div>
+      </section>
+    </div>
+
+    <section class="card full">
+      <h2>Response <span id="status" class="status"></span></h2>
+      <pre id="output">Click an action above.</pre>
+    </section>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

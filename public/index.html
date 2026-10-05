@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security Gateway — Sign in</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header><div class="brand"><span class="dot"></span>Enterprise Security Gateway</div></header>
+    <h1>Sign in</h1>
+    <p class="sub">Hybrid authentication: local Bcrypt accounts or GitHub OAuth 2.0.</p>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Login</h2>
+        <a class="btn gh" href="/api/v1/auth/github">Continue with GitHub</a>
+        <div class="or">or with email</div>
+        <form id="loginForm" autocomplete="on">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required>
+          <button class="primary full" type="submit">Login</button>
+        </form>
+        <div id="loginMsg" class="msg"></div>
+        <div class="creds">
+          <p>Test accounts (click to fill):</p>
+          <button type="button" data-e="superadmin@gateway.dev" data-p="SuperAdmin@123">SuperAdmin</button>
+          <button type="button" data-e="manager@gateway.dev" data-p="Manager@123">Manager</button>
+          <button type="button" data-e="employee@gateway.dev" data-p="Employee@123">Employee</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <label for="rname">Full name</label>
+          <input id="rname" name="name" required>
+          <label for="remail">Email</label>
+          <input id="remail" name="email" type="email" required>
+          <label for="rpassword">Password</label>
+          <input id="rpassword" name="password" type="password" required>
+          <p class="creds">Min 8 chars with upper, lower, digit and special character. New accounts get the <code>Employee</code> role.</p>
+          <button class="primary full" type="submit">Create account</button>
+        </form>
+        <div id="registerMsg" class="msg"></div>
+      </section>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
