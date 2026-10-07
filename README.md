@@ -1,4 +1,9 @@
 # 🛡️ Enterprise Multi-Tenant Security Gateway
+## Screenshots:
+<img width="1917" height="882" alt="Screenshot 2026-10-07 102414" src="https://github.com/user-attachments/assets/60b38959-74b4-4b3a-a279-16067e6ee2b0" />
+<img width="1917" height="882" alt="Screenshot 2026-10-07 102333" src="https://github.com/user-attachments/assets/40ccdb8a-e885-40a4-9721-f4a7208e5bf2" />
+<img width="1917" height="877" alt="Screenshot 2026-10-07 102309" src="https://github.com/user-attachments/assets/0a8eb257-5a4d-41c4-bc16-3a22f47e459f" />
+
 
 **CSC337 – Advanced Web Technologies · Lab Assignment 05**
 Ahmar Ali Murtaza · SP24-BSE-003 · COMSATS University Islamabad, Vehari Campus
